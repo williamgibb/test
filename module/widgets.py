@@ -24,3 +24,13 @@ class Duck(object):
         if pursuer == PORKY:
             return False
         return True
+
+def foobar(*args, **kwargs):
+    if args:
+        print(args)
+    else:
+        print('no *args')
+    if kwargs:
+        print(kwargs)
+    else:
+        print('no *kwargs')
