@@ -50,3 +50,7 @@ class TestDuck(unittest.TestCase):
             r = self.duck.evade(pursuer=p)
 
 
+class TestFuncs(unittest.TestCase):
+    def test_args(self):
+        r = widgets.foobar(1, 2, 3)
+        self.assertEqual(r, None)
